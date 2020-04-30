@@ -12,7 +12,7 @@ import {
 import { Jumbotron, Display4, Lead } from 'bootstrap-4-react';
 
 function Main() {
-  if (localStorage.getItem('spr') == '') {
+  if ((localStorage.getItem('spr') == '') || (localStorage.getItem('spr') == []))  {
     var spr = [];
     var ar1 = ["Москва","Пупкин","Пупок","Пупович","88005553535"];
     var ar2 = ["Краснодар","Пупкин","Пупок","Пупович","88005553532"];
@@ -39,6 +39,7 @@ function Main() {
           <Switch>
             <Route path="/" exact component={Homes} />
             <Route path="/city/:id" component={SprDo} />
+            <Route path="/city/" component={SprDo} />
           </Switch>
 
       </div>
