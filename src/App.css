@@ -1,0 +1,47 @@
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul.iconmenu {
+  display: flex;
+}
+
+
+.iconmenu li {
+  list-style: none;
+  padding: 0 10px;
+}
+.delete, .update, .choose  {
+background-size: contain!important;
+background-repeat: no-repeat!important;
+border: 0;
+width: 25px;
+height: 25px;
+}
+
+.menu-item {
+  display: inline-flex;
+}
+
+.delete {
+  background: url(https://files.getquicker.net/_icons/CECFC88A28D8D8DD89108AE7935BAB29B5CDEBA8.png);
+  }
+
+.update {
+  background: url(http://webschool.infoit.it/img/icone/balls/register.png);
+  }
+
+  .choose {
+    background: url(https://2.bp.blogspot.com/-FVJkJd04bTg/VxJjVvcTNbI/AAAAAAAASiM/O4eMuVhu6t0YQIptlsrISxPrX9FP3cqIQCK4B/s72-c/mouse%2Bclick.png);
+    }
+
+  .delete:hover, .choose:hover, .update:hover {
+    cursor: pointer;
+  }  
+
+
+  .form-group {
+    text-align: left;
+  }
